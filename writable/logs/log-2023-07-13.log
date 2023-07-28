@@ -1,0 +1,142 @@
+CRITICAL - 2023-07-13 02:58:56 --> mysqli::__construct(): (HY000/2002): No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in APPPATH\Views\login.php on line 18.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::__construct(): (HY000/2002): No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\login.php', 18)
+ 2 APPPATH\Views\login.php(18): mysqli->__construct('localhost', 'tu_usuario', 'tu_contraseña', 'nombre_de_la_base_de_datos')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\login.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('login', [], true)
+ 6 APPPATH\Controllers\Home.php(65): view('login')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->login()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-13 04:45:33 --> pg_connect(): Unable to connect to PostgreSQL server: could not translate host name &quot;nombre_servidor&quot; to address: Unknown host
+in APPPATH\Views\login.php on line 27.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): Unable to connect to PostgreSQL server: could not translate host name &quot;nombre_servidor&quot; to address: Unknown host', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\login.php', 27)
+ 2 APPPATH\Views\login.php(27): pg_connect('host=nombre_servidor dbname=nombre_base_datos user=nombre_usuario password=contraseña')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\login.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('login', [], true)
+ 6 APPPATH\Controllers\Home.php(65): view('login')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->login()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-13 04:46:50 --> pg_connect(): Unable to connect to PostgreSQL server: invalid connection option &quot;pgsql:host&quot;
+in APPPATH\Views\login.php on line 27.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): Unable to connect to PostgreSQL server: invalid connection option &quot;pgsql:host&quot;', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\login.php', 27)
+ 2 APPPATH\Views\login.php(27): pg_connect('pgsql:host=127.0.0.1;port=5432;dbname=db_registro;user=postgres;password=1008')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\login.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('login', [], true)
+ 6 APPPATH\Controllers\Home.php(65): view('login')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->login()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-13 04:47:23 --> pg_connect(): Unable to connect to PostgreSQL server: could not translate host name &quot;127.0.0.1;port=5432;dbname=db_registro;user=postgres;password=1008&quot; to address: Unknown host
+in APPPATH\Views\login.php on line 27.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): Unable to connect to PostgreSQL server: could not translate host name &quot;127.0.0.1;port=5432;dbname=db_registro;user=postgres;password=1008&quot; to address: Unknown host', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\login.php', 27)
+ 2 APPPATH\Views\login.php(27): pg_connect('host=127.0.0.1;port=5432;dbname=db_registro;user=postgres;password=1008')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\login.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('login', [], true)
+ 6 APPPATH\Controllers\Home.php(65): view('login')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->login()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-13 04:48:26 --> pg_query(): Query failed: ERROR:  no existe la relación «nombre_tabla»
+LINE 1: SELECT * FROM nombre_tabla
+                      ^
+in APPPATH\Views\login.php on line 35.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  no existe la relación «nombre_tabla»
+LINE 1: SELECT * FROM nombre_tabla
+                      ^', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\login.php', 35)
+ 2 APPPATH\Views\login.php(35): pg_query(resource (pgsql link), 'SELECT * FROM nombre_tabla')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\login.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('login', [], true)
+ 6 APPPATH\Controllers\Home.php(65): view('login')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->login()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-13 04:49:13 --> Undefined array key "correo"
+in APPPATH\Views\login.php on line 43.
+ 1 APPPATH\Views\login.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "correo"', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\login.php', 43)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\login.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('login', [], true)
+ 5 APPPATH\Controllers\Home.php(65): view('login')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->login()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-13 05:57:25 --> syntax error, unexpected identifier "fas", expecting "," or ";"
+in APPPATH\Views\login.php on line 135.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('login', [], true)
+ 3 APPPATH\Controllers\Home.php(65): view('login')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->login()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-13 06:23:58 --> syntax error, unexpected token "/", expecting end of file
+in APPPATH\Views\login.php on line 117.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('login', [], true)
+ 3 APPPATH\Controllers\Home.php(65): view('login')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->login()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-13 06:35:36 --> Undefined variable $conn
+in APPPATH\Views\login.php on line 95.
+ 1 APPPATH\Views\login.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $conn', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\login.php', 95)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\login.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('login', [], true)
+ 5 APPPATH\Controllers\Home.php(65): view('login')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->login()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-13 06:37:09 --> Undefined variable $conn
+in APPPATH\Views\login.php on line 95.
+ 1 APPPATH\Views\login.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $conn', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\login.php', 95)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\login.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('login', [], true)
+ 5 APPPATH\Controllers\Home.php(65): view('login')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->login()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-13 16:39:54 --> Invalid file: "Bienvenido.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Bienvenido.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Bienvenido', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('Bienvenido')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-13 16:40:00 --> Invalid file: "Bienvenido.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Bienvenido.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Bienvenido', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('Bienvenido')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-13 17:38:23 --> syntax error, unexpected token "<"
+in APPPATH\Views\login.php on line 139.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('login', [], true)
+ 3 APPPATH\Controllers\Home.php(65): view('login')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->login()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

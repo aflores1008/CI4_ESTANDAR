@@ -1,0 +1,676 @@
+ERROR - 2023-07-10 00:11:34 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out (0x0000274C/10060)
+	Is the server running on host &quot;192.168.2.95&quot; and accepting
+	TCP/IP connections on port 5432? in C:\xampp\htdocs\CI4\system\Database\Postgre\Connection.php:72
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'C:\\xampp\\htdocs...', 72)
+#1 C:\xampp\htdocs\CI4\system\Database\Postgre\Connection.php(72): pg_connect('host=192.168.2....')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\CI4\app\Controllers\Home.php(45): CodeIgniter\Database\BaseConnection->query('SELECT idperson...')
+#5 C:\xampp\htdocs\CI4\system\CodeIgniter.php(932): App\Controllers\Home->testbd('1351228372')
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\CI4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-10 00:11:34 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out (0x0000274C/10060)
+	Is the server running on host &quot;192.168.2.95&quot; and accepting
+	TCP/IP connections on port 5432?
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(45): CodeIgniter\Database\BaseConnection->query('SELECT idpersonal, cedula, apellido1, apellido2, nombres, genero 
+        FROM esq_datos_personales.personal where cedula=\'1351228372\'  ')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->testbd('1351228372')
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-10 00:39:32 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out (0x0000274C/10060)
+	Is the server running on host &quot;192.168.2.95&quot; and accepting
+	TCP/IP connections on port 5432? in C:\xampp\htdocs\CI4\system\Database\Postgre\Connection.php:72
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'C:\\xampp\\htdocs...', 72)
+#1 C:\xampp\htdocs\CI4\system\Database\Postgre\Connection.php(72): pg_connect('host=192.168.2....')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\CI4\app\Controllers\Home.php(45): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#5 C:\xampp\htdocs\CI4\system\CodeIgniter.php(932): App\Controllers\Home->testbd('1351228372')
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\CI4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-10 00:39:32 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out (0x0000274C/10060)
+	Is the server running on host &quot;192.168.2.95&quot; and accepting
+	TCP/IP connections on port 5432?
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(45): CodeIgniter\Database\BaseConnection->query('SELECT * FROM usuarios where cedula=\'1351228372\'  ')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->testbd('1351228372')
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-10 00:39:51 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out (0x0000274C/10060)
+	Is the server running on host &quot;192.168.2.95&quot; and accepting
+	TCP/IP connections on port 5432? in C:\xampp\htdocs\CI4\system\Database\Postgre\Connection.php:72
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'C:\\xampp\\htdocs...', 72)
+#1 C:\xampp\htdocs\CI4\system\Database\Postgre\Connection.php(72): pg_connect('host=192.168.2....')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\CI4\app\Controllers\Home.php(45): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#5 C:\xampp\htdocs\CI4\system\CodeIgniter.php(932): App\Controllers\Home->testbd('1351228372')
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\CI4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-10 00:39:51 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out (0x0000274C/10060)
+	Is the server running on host &quot;192.168.2.95&quot; and accepting
+	TCP/IP connections on port 5432?
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(45): CodeIgniter\Database\BaseConnection->query('SELECT * FROM usuarios where cedula=\'1351228372\'  ')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->testbd('1351228372')
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-10 00:40:15 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out (0x0000274C/10060)
+	Is the server running on host &quot;192.168.2.95&quot; and accepting
+	TCP/IP connections on port 5432? in C:\xampp\htdocs\CI4\system\Database\Postgre\Connection.php:72
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'C:\\xampp\\htdocs...', 72)
+#1 C:\xampp\htdocs\CI4\system\Database\Postgre\Connection.php(72): pg_connect('host=192.168.2....')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\CI4\app\Controllers\Home.php(45): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#5 C:\xampp\htdocs\CI4\system\CodeIgniter.php(932): App\Controllers\Home->testbd('1351228372')
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\CI4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-10 00:40:15 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out (0x0000274C/10060)
+	Is the server running on host &quot;192.168.2.95&quot; and accepting
+	TCP/IP connections on port 5432?
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(45): CodeIgniter\Database\BaseConnection->query('SELECT * FROM usuarios where cedula=\'1351228372\'  ')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->testbd('1351228372')
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-10 00:47:19 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out (0x0000274C/10060)
+	Is the server running on host &quot;192.168.2.95&quot; and accepting
+	TCP/IP connections on port 5432? in C:\xampp\htdocs\CI4\system\Database\Postgre\Connection.php:72
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'C:\\xampp\\htdocs...', 72)
+#1 C:\xampp\htdocs\CI4\system\Database\Postgre\Connection.php(72): pg_connect('host=192.168.2....')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\CI4\app\Controllers\Home.php(45): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#5 C:\xampp\htdocs\CI4\system\CodeIgniter.php(932): App\Controllers\Home->testbd('1351228372')
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\CI4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-10 00:47:20 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out (0x0000274C/10060)
+	Is the server running on host &quot;192.168.2.95&quot; and accepting
+	TCP/IP connections on port 5432?
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(45): CodeIgniter\Database\BaseConnection->query('SELECT * FROM usuarios.personal where cedula=\'1351228372\'  ')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->testbd('1351228372')
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-10 00:54:26 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no hay una l�nea en pg_hba.conf para �192.168.100.122�, usuario �postgres�, base de datos �db_datos�, sin cifrado in C:\xampp\htdocs\CI4\system\Database\Postgre\Connection.php:72
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'C:\\xampp\\htdocs...', 72)
+#1 C:\xampp\htdocs\CI4\system\Database\Postgre\Connection.php(72): pg_connect('host=192.168.10...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\CI4\app\Controllers\Home.php(45): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#5 C:\xampp\htdocs\CI4\system\CodeIgniter.php(932): App\Controllers\Home->testbd('1351228372')
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\CI4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-10 00:54:26 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no hay una l�nea en pg_hba.conf para �192.168.100.122�, usuario �postgres�, base de datos �db_datos�, sin cifrado
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(45): CodeIgniter\Database\BaseConnection->query('SELECT * FROM usuarios.personal where cedula=\'1351228372\'  ')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->testbd('1351228372')
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-10 00:55:36 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out (0x0000274C/10060)
+	Is the server running on host &quot;192.168.2.95&quot; and accepting
+	TCP/IP connections on port 5432? in C:\xampp\htdocs\CI4\system\Database\Postgre\Connection.php:72
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'C:\\xampp\\htdocs...', 72)
+#1 C:\xampp\htdocs\CI4\system\Database\Postgre\Connection.php(72): pg_connect('host=192.168.2....')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\CI4\app\Controllers\Home.php(45): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#5 C:\xampp\htdocs\CI4\system\CodeIgniter.php(932): App\Controllers\Home->testbd('1351228372')
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\CI4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-10 00:55:36 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out (0x0000274C/10060)
+	Is the server running on host &quot;192.168.2.95&quot; and accepting
+	TCP/IP connections on port 5432?
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(45): CodeIgniter\Database\BaseConnection->query('SELECT * FROM usuarios.personal where cedula=\'1351228372\'  ')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->testbd('1351228372')
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-10 01:03:32 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �db_usuatios� in C:\xampp\htdocs\CI4\system\Database\Postgre\Connection.php:72
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'C:\\xampp\\htdocs...', 72)
+#1 C:\xampp\htdocs\CI4\system\Database\Postgre\Connection.php(72): pg_connect('host=127.0.0.1 ...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\CI4\app\Controllers\Home.php(45): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#5 C:\xampp\htdocs\CI4\system\CodeIgniter.php(932): App\Controllers\Home->testbd('1351228372')
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\CI4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-10 01:03:32 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �db_usuatios�
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(45): CodeIgniter\Database\BaseConnection->query('SELECT * FROM usuarios.personal where cedula=\'1351228372\'  ')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->testbd('1351228372')
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-10 01:03:55 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �db_usuarios� in C:\xampp\htdocs\CI4\system\Database\Postgre\Connection.php:72
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'C:\\xampp\\htdocs...', 72)
+#1 C:\xampp\htdocs\CI4\system\Database\Postgre\Connection.php(72): pg_connect('host=127.0.0.1 ...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\CI4\app\Controllers\Home.php(45): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#5 C:\xampp\htdocs\CI4\system\CodeIgniter.php(932): App\Controllers\Home->testbd('1351228372')
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\CI4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-10 01:03:55 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �db_usuarios�
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(45): CodeIgniter\Database\BaseConnection->query('SELECT * FROM usuarios.personal where cedula=\'1351228372\'  ')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->testbd('1351228372')
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-10 01:04:11 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la relación «usuarios.personal»
+LINE 1: SELECT * FROM usuarios.personal where cedula='1351228372'  
+                      ^ in C:\xampp\htdocs\CI4\system\Database\Postgre\Connection.php:187
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 187)
+#1 C:\xampp\htdocs\CI4\system\Database\Postgre\Connection.php(187): pg_query(Resource id #134, 'SELECT * FROM u...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('SELECT * FROM u...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM u...')
+#4 C:\xampp\htdocs\CI4\app\Controllers\Home.php(45): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#5 C:\xampp\htdocs\CI4\system\CodeIgniter.php(932): App\Controllers\Home->testbd('1351228372')
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\CI4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-10 01:04:11 --> pg_query(): Query failed: ERROR:  no existe la relación «usuarios.personal»
+LINE 1: SELECT * FROM usuarios.personal where cedula='1351228372'  
+                      ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 187.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  no existe la relación «usuarios.personal»
+LINE 1: SELECT * FROM usuarios.personal where cedula=\'1351228372\'  
+                      ^', 'C:\\xampp\\htdocs\\CI4\\system\\Database\\Postgre\\Connection.php', 187)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(187): pg_query(resource (pgsql link), 'SELECT * FROM usuarios.personal where cedula=\'1351228372\'  ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('SELECT * FROM usuarios.personal where cedula=\'1351228372\'  ')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM usuarios.personal where cedula=\'1351228372\'  ')
+ 5 APPPATH\Controllers\Home.php(45): CodeIgniter\Database\BaseConnection->query('SELECT * FROM usuarios.personal where cedula=\'1351228372\'  ')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->testbd('1351228372')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-10 01:44:48 --> Invalid file: "Bienvenido.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Bienvenido.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Bienvenido', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('Bienvenido')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-10 01:44:48 --> Invalid file: "Bienvenido.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Bienvenido.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Bienvenido', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('Bienvenido')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-10 05:44:30 --> Unclosed '{' on line 6
+in APPPATH\Controllers\Home.php on line 57.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CI4\\app\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-10 06:08:36 --> Call to undefined method App\Controllers\Home::select()
+in APPPATH\Controllers\Home.php on line 50.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->getUsers()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-10 06:40:50 --> syntax error, unexpected token "public"
+in APPPATH\Controllers\Home.php on line 36.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CI4\\app\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-10 06:41:29 --> CodeIgniter\HTTP\Response::setJSON(): Argument #2 ($unencoded) must be of type bool, array given, called in C:\xampp\htdocs\CI4\app\Controllers\Home.php on line 33
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 246.
+ 1 APPPATH\Controllers\Home.php(33): CodeIgniter\HTTP\Response->setJSON([...], [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->api()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-10 15:41:36 --> Undefined variable $id
+in APPPATH\Controllers\Home.php on line 81.
+ 1 APPPATH\Controllers\Home.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'C:\\xampp\\htdocs\\CI4\\app\\Controllers\\Home.php', 81)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->deleteUser()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-10 15:41:36 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in C:\xampp\htdocs\CI4\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\CI4\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\CI4\system\API\ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\CI4\system\Debug\Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+【Previous Exception】
+ErrorException
+Undefined variable $id
+#0 C:\xampp\htdocs\CI4\app\Controllers\Home.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 81)
+#1 C:\xampp\htdocs\CI4\system\CodeIgniter.php(932): App\Controllers\Home->deleteUser()
+#2 C:\xampp\htdocs\CI4\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\CI4\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\CI4\index.php(67): CodeIgniter\CodeIgniter->run()
+#5 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-07-10 15:48:59 --> Undefined variable $id
+in APPPATH\Controllers\Home.php on line 109.
+ 1 APPPATH\Controllers\Home.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'C:\\xampp\\htdocs\\CI4\\app\\Controllers\\Home.php', 109)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->deleteUser()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-10 15:49:00 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in C:\xampp\htdocs\CI4\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\CI4\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\CI4\system\API\ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\CI4\system\Debug\Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+【Previous Exception】
+ErrorException
+Undefined variable $id
+#0 C:\xampp\htdocs\CI4\app\Controllers\Home.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 109)
+#1 C:\xampp\htdocs\CI4\system\CodeIgniter.php(932): App\Controllers\Home->deleteUser()
+#2 C:\xampp\htdocs\CI4\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\CI4\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\CI4\index.php(67): CodeIgniter\CodeIgniter->run()
+#5 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-07-10 15:59:52 --> Call to undefined method CodeIgniter\Database\Postgre\Result::deleteRow()
+in APPPATH\Controllers\Home.php on line 124.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->deleteUser('6')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-10 15:59:53 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in C:\xampp\htdocs\CI4\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\CI4\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\CI4\system\API\ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\CI4\system\Debug\Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#5 {main}
+  thrown
+【Previous Exception】
+Error
+Call to undefined method CodeIgniter\Database\Postgre\Result::deleteRow()
+#0 C:\xampp\htdocs\CI4\system\CodeIgniter.php(932): App\Controllers\Home->deleteUser('6')
+#1 C:\xampp\htdocs\CI4\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\CI4\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\CI4\index.php(67): CodeIgniter\CodeIgniter->run()
+#4 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-07-10 16:00:40 --> Too few arguments to function App\Controllers\Home::deleteUser(), 0 passed in C:\xampp\htdocs\CI4\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Home.php on line 117.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->deleteUser()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-10 16:03:08 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la columna «userData» en la relación «usuarios»
+LINE 1: INSERT INTO &quot;usuarios&quot; (&quot;userData&quot;) VALUES ('')
+                                ^ in C:\xampp\htdocs\CI4\system\Database\Postgre\Connection.php:187
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 187)
+#1 C:\xampp\htdocs\CI4\system\Database\Postgre\Connection.php(187): pg_query(Resource id #137, 'INSERT INTO "us...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "us...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "us...')
+#4 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "us...', Array, false)
+#5 C:\xampp\htdocs\CI4\app\Controllers\Home.php(80): CodeIgniter\Database\BaseBuilder->insert('userData')
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(932): App\Controllers\Home->saveUser('userData')
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\CI4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-07-10 16:03:08 --> pg_query(): Query failed: ERROR:  no existe la columna «userData» en la relación «usuarios»
+LINE 1: INSERT INTO &quot;usuarios&quot; (&quot;userData&quot;) VALUES ('')
+                                ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 187.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  no existe la columna «userData» en la relación «usuarios»
+LINE 1: INSERT INTO &quot;usuarios&quot; (&quot;userData&quot;) VALUES (\'\')
+                                ^', 'C:\\xampp\\htdocs\\CI4\\system\\Database\\Postgre\\Connection.php', 187)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(187): pg_query(resource (pgsql link), 'INSERT INTO "usuarios" ("userData") VALUES (\'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "usuarios" ("userData") VALUES (\'\')')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "usuarios" ("userData") VALUES (\'\')')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "usuarios" ("userData") VALUES (:userData:)', [...], false)
+ 6 APPPATH\Controllers\Home.php(80): CodeIgniter\Database\BaseBuilder->insert('userData')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->saveUser('userData')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-10 16:03:08 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in C:\xampp\htdocs\CI4\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\CI4\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\CI4\system\API\ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\CI4\system\Debug\Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Database\Exceptions\DatabaseException
+pg_query(): Query failed: ERROR:  no existe la columna «userData» en la relación «usuarios»
+LINE 1: INSERT INTO &quot;usuarios&quot; (&quot;userData&quot;) VALUES ('')
+                                ^
+#0 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "us...', Array, false)
+#1 C:\xampp\htdocs\CI4\app\Controllers\Home.php(80): CodeIgniter\Database\BaseBuilder->insert('userData')
+#2 C:\xampp\htdocs\CI4\system\CodeIgniter.php(932): App\Controllers\Home->saveUser('userData')
+#3 C:\xampp\htdocs\CI4\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\CI4\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\CI4\index.php(67): CodeIgniter\CodeIgniter->run()
+#6 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2023-07-10 16:04:02 --> ErrorException: pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombre» de la relación «usuarios» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (5, , null, null, null, null, null). in C:\xampp\htdocs\CI4\system\Database\Postgre\Connection.php:187
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 187)
+#1 C:\xampp\htdocs\CI4\system\Database\Postgre\Connection.php(187): pg_query(Resource id #137, 'INSERT INTO "us...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "us...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "us...')
+#4 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "us...', Array, false)
+#5 C:\xampp\htdocs\CI4\app\Controllers\Home.php(80): CodeIgniter\Database\BaseBuilder->insert('usuario')
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(932): App\Controllers\Home->saveUser('usuario')
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\CI4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-07-10 16:04:02 --> pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombre» de la relación «usuarios» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (5, , null, null, null, null, null).
+in SYSTEMPATH\Database\Postgre\Connection.php on line 187.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombre» de la relación «usuarios» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (5, , null, null, null, null, null).', 'C:\\xampp\\htdocs\\CI4\\system\\Database\\Postgre\\Connection.php', 187)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(187): pg_query(resource (pgsql link), 'INSERT INTO "usuarios" ("usuario") VALUES (\'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "usuarios" ("usuario") VALUES (\'\')')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "usuarios" ("usuario") VALUES (\'\')')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "usuarios" ("usuario") VALUES (:usuario:)', [...], false)
+ 6 APPPATH\Controllers\Home.php(80): CodeIgniter\Database\BaseBuilder->insert('usuario')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->saveUser('usuario')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-10 16:04:02 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in C:\xampp\htdocs\CI4\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\CI4\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\CI4\system\API\ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\CI4\system\Debug\Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Database\Exceptions\DatabaseException
+pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombre» de la relación «usuarios» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (5, , null, null, null, null, null).
+#0 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "us...', Array, false)
+#1 C:\xampp\htdocs\CI4\app\Controllers\Home.php(80): CodeIgniter\Database\BaseBuilder->insert('usuario')
+#2 C:\xampp\htdocs\CI4\system\CodeIgniter.php(932): App\Controllers\Home->saveUser('usuario')
+#3 C:\xampp\htdocs\CI4\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\CI4\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\CI4\index.php(67): CodeIgniter\CodeIgniter->run()
+#6 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2023-07-10 16:04:13 --> ErrorException: pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombre» de la relación «usuarios» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (6, , null, null, null, null, null). in C:\xampp\htdocs\CI4\system\Database\Postgre\Connection.php:187
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 187)
+#1 C:\xampp\htdocs\CI4\system\Database\Postgre\Connection.php(187): pg_query(Resource id #137, 'INSERT INTO "us...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "us...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "us...')
+#4 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "us...', Array, false)
+#5 C:\xampp\htdocs\CI4\app\Controllers\Home.php(80): CodeIgniter\Database\BaseBuilder->insert('usuario')
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(932): App\Controllers\Home->saveUser('usuario')
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\CI4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-07-10 16:04:13 --> pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombre» de la relación «usuarios» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (6, , null, null, null, null, null).
+in SYSTEMPATH\Database\Postgre\Connection.php on line 187.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombre» de la relación «usuarios» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (6, , null, null, null, null, null).', 'C:\\xampp\\htdocs\\CI4\\system\\Database\\Postgre\\Connection.php', 187)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(187): pg_query(resource (pgsql link), 'INSERT INTO "usuarios" ("usuario") VALUES (\'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "usuarios" ("usuario") VALUES (\'\')')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "usuarios" ("usuario") VALUES (\'\')')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "usuarios" ("usuario") VALUES (:usuario:)', [...], false)
+ 6 APPPATH\Controllers\Home.php(80): CodeIgniter\Database\BaseBuilder->insert('usuario')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->saveUser('usuario')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-10 16:04:13 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in C:\xampp\htdocs\CI4\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\CI4\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\CI4\system\API\ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\CI4\system\Debug\Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Database\Exceptions\DatabaseException
+pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombre» de la relación «usuarios» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (6, , null, null, null, null, null).
+#0 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "us...', Array, false)
+#1 C:\xampp\htdocs\CI4\app\Controllers\Home.php(80): CodeIgniter\Database\BaseBuilder->insert('usuario')
+#2 C:\xampp\htdocs\CI4\system\CodeIgniter.php(932): App\Controllers\Home->saveUser('usuario')
+#3 C:\xampp\htdocs\CI4\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\CI4\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\CI4\index.php(67): CodeIgniter\CodeIgniter->run()
+#6 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-07-10 18:40:46 --> Call to undefined method CodeIgniter\Router\RouteCollection::update()
+in APPPATH\Config\Routes.php on line 41.
+ 1 SYSTEMPATH\Router\RouteCollection.php(267): require()
+ 2 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-10 18:40:56 --> Call to undefined method CodeIgniter\Router\RouteCollection::update()
+in APPPATH\Config\Routes.php on line 41.
+ 1 SYSTEMPATH\Router\RouteCollection.php(267): require()
+ 2 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-10 18:41:20 --> syntax error, unexpected token "(", expecting identifier or variable or "{" or "$"
+in APPPATH\Config\Routes.php on line 41.
+ 1 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-10 18:41:40 --> syntax error, unexpected token "(", expecting identifier or variable or "{" or "$"
+in APPPATH\Config\Routes.php on line 41.
+ 1 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-10 18:42:13 --> syntax error, unexpected token "(", expecting identifier or variable or "{" or "$"
+in APPPATH\Config\Routes.php on line 41.
+ 1 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-10 18:43:32 --> syntax error, unexpected token "(", expecting identifier or variable or "{" or "$"
+in APPPATH\Config\Routes.php on line 41.
+ 1 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-10 18:43:37 --> syntax error, unexpected token "(", expecting identifier or variable or "{" or "$"
+in APPPATH\Config\Routes.php on line 41.
+ 1 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-10 18:43:42 --> syntax error, unexpected token "(", expecting identifier or variable or "{" or "$"
+in APPPATH\Config\Routes.php on line 41.
+ 1 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-10 18:43:47 --> syntax error, unexpected token "(", expecting identifier or variable or "{" or "$"
+in APPPATH\Config\Routes.php on line 41.
+ 1 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-10 18:50:04 --> Trait "App\Controllers\CodeIgniter\HTTP\Response" not found
+in APPPATH\Controllers\Home.php on line 5.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-07-10 18:51:02 --> Trait "App\Controllers\CodeIgniter\HTTP\Response" not found
+in APPPATH\Controllers\Home.php on line 5.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-07-10 18:51:08 --> Trait "App\Controllers\CodeIgniter\HTTP\Response" not found
+in APPPATH\Controllers\Home.php on line 5.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-07-10 18:51:14 --> Trait "App\Controllers\CodeIgniter\HTTP\Response" not found
+in APPPATH\Controllers\Home.php on line 5.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-07-10 18:52:33 --> Call to undefined method App\Controllers\Home::setJSONResponse()
+in APPPATH\Controllers\Home.php on line 96.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->updateUser('clara', 'hola')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-10 18:52:34 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in C:\xampp\htdocs\CI4\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\CI4\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\CI4\system\API\ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\CI4\system\Debug\Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#5 {main}
+  thrown
+【Previous Exception】
+Error
+Call to undefined method App\Controllers\Home::setJSONResponse()
+#0 C:\xampp\htdocs\CI4\system\CodeIgniter.php(932): App\Controllers\Home->updateUser('clara', 'hola')
+#1 C:\xampp\htdocs\CI4\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\CI4\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\CI4\index.php(67): CodeIgniter\CodeIgniter->run()
+#4 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-07-10 21:10:42 --> Class "App\Controllers\Facebook" not found
+in APPPATH\Controllers\Home.php on line 53.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->apirest()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-10 21:10:54 --> Class "App\Controllers\Facebook" not found
+in APPPATH\Controllers\Home.php on line 53.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->apirest()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-10 21:12:09 --> Class "App\Controllers\Facebook" not found
+in APPPATH\Controllers\Home.php on line 53.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->apirest()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-10 21:12:13 --> Class "App\Controllers\Facebook" not found
+in APPPATH\Controllers\Home.php on line 53.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->apirest()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-10 21:17:36 --> Class "App\Controllers\Facebook" not found
+in APPPATH\Controllers\Home.php on line 59.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->apirest()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-10 21:21:31 --> syntax error, unexpected token ";", expecting ")"
+in APPPATH\Controllers\Home.php on line 57.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CI4\\app\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-10 21:21:56 --> Class "App\Controllers\Facebook" not found
+in APPPATH\Controllers\Home.php on line 53.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->apirest()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-10 21:22:42 --> Undefined variable $resultados
+in APPPATH\Controllers\Home.php on line 64.
+ 1 APPPATH\Controllers\Home.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultados', 'C:\\xampp\\htdocs\\CI4\\app\\Controllers\\Home.php', 64)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->apirest()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
